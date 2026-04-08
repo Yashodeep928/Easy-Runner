@@ -1,4 +1,4 @@
-let velocity = 0;
+let velocity  = 0;
 let gravity = 0.7;
 let jumpForce = 15;
 let isJumping = false;
