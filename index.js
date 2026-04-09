@@ -9,5 +9,3 @@ startJump(false);        // pass gameOver status
 
 const result = updateJump(null);  // null means no platform below
 console.log(result);
-
-console.log(isInAir());
