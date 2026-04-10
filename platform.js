@@ -9,7 +9,7 @@ export function accessPlatform(){
     const data =
     {
         bottom: rect.bottom,
-        height: rect.height,
+        height:rect.height,
         width:rect.width
     }
     console.log(data)
