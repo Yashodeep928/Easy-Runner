@@ -9,6 +9,8 @@ let baseGround = 0;
 export function initJumpSystem(baseGroundLevel) {
   groundLevel = baseGroundLevel;
   baseGround = baseGroundLevel;
+  console.log(groundLevel)
+  console.log(baseGround)
 }
 
 export function startJump(gameOver) {
