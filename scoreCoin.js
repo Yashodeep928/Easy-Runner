@@ -21,6 +21,8 @@ export function placeCoin() {
 
 
 export function checkCoinCollision(playerEl) {
+  if (!coinEl || !playerEl) return false; // ✅ prevents crash
+
   if (coinEl.style.display === "none") return false;
 
   const p = playerEl.getBoundingClientRect();
@@ -37,6 +39,10 @@ export function checkCoinCollision(playerEl) {
 export function collectCoin() {
   const score = Number(scoreEl.innerText);
   scoreEl.innerText = score + 1;
+
   coinEl.style.display = "none";
-  placeCoin();
+
+  setTimeout(() => {
+    placeCoin(); // ⏳ delay respawn
+  }, 500);
 }
