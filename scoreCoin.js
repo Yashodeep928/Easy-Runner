@@ -44,5 +44,5 @@ export function collectCoin() {
 
   setTimeout(() => {
     placeCoin(); // ⏳ delay respawn
-  }, 500);
+  }, 5000);
 }
